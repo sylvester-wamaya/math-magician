@@ -1,8 +1,11 @@
 import './App.css';
+import Layout from './components/calculator';
 
 function App() {
   return (
-    console.log('k')
+    <div>
+      <Layout />
+    </div>
   );
 }
 
