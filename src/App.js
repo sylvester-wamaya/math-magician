@@ -1,10 +1,10 @@
 import './App.css';
-import Layout from './components/calculator';
+import Calculator from './components/Calculator';
 
 function App() {
   return (
     <div>
-      <Layout />
+      <Calculator />
     </div>
   );
 }

@@ -1,4 +1,6 @@
-function Layout() {
+import Buttons from './Buttons';
+
+function Calculator() {
   const buttons = [
     { value: 'AC', className: 'grey' },
     { value: '+/-', className: 'grey' },
@@ -20,15 +22,18 @@ function Layout() {
     { value: '.', className: 'grey' },
     { value: '=', className: 'orange' },
   ];
-  const render = buttons.map((btn) => (
-    <button className={btn.className} type="button" key={btn.value}>
-      {btn.value}
-    </button>
-  ));
+
   return (
-    <div class="container">
-      {render}
+
+    <div className="container">
+      {buttons.map((btn) => (
+        <Buttons
+          value={btn.value}
+          className={btn.className}
+          key={btn.value}
+        />
+      ))}
     </div>
   );
 }
-export default Layout;
+export default Calculator;
