@@ -2,6 +2,7 @@ import Buttons from './Buttons';
 
 function Calculator() {
   const buttons = [
+    { value: '0', className: 'display' },
     { value: 'AC', className: 'grey' },
     { value: '+/-', className: 'grey' },
     { value: '%', className: 'grey' },
@@ -18,7 +19,7 @@ function Calculator() {
     { value: '2', className: 'grey' },
     { value: '3', className: 'grey' },
     { value: '+', className: 'orange' },
-    { value: '0', className: 'grey' },
+    { value: '0', className: 'grey equal' },
     { value: '.', className: 'grey' },
     { value: '=', className: 'orange' },
   ];
