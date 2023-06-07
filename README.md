@@ -69,6 +69,7 @@ Math magician application is a project that allows a user to do basic mathematic
 
 - Added raect project set up.
 - Added linters set up.
+- Added Calculator UI
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -154,7 +155,7 @@ npm start
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] Add Home page
-- [ ] Add caculator page
+- [ ] Add caculator functionality
 - [ ] Add quote page
 
 
