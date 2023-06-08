@@ -38,3 +38,14 @@ body {
 .orange {
   background-color: orange;
 }
+
+.orange:hover,
+.grey:hover {
+  border: solid 1px black;
+}
+
+.orange:active,
+.grey:active {
+  border: solid 1px black;
+  background-color: aqua;
+}
