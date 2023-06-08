@@ -17,9 +17,6 @@ function Calculator() {
     operation: null,
   });
 
-  const handleButton = (e) => {
-    setobj((calculate(obj, e.target.innerText)));
-  };
   const buttons = [
     { value: 'AC', className: 'grey' },
     { value: '+/-', className: 'grey' },
@@ -41,6 +38,10 @@ function Calculator() {
     { value: '.', className: 'grey' },
     { value: '=', className: 'orange' },
   ];
+
+  const handleButton = (e) => {
+    setobj((calculate(obj, e.target.innerText)));
+  };
 
   return (
 
