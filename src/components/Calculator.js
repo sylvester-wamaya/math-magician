@@ -1,8 +1,26 @@
+import { useState } from 'react';
+import { PropTypes } from 'prop-types';
 import Buttons from './Buttons';
+import calculate from './logic/calculate';
+
+function Display({ result }) {
+  Display.propTypes = {
+    result: PropTypes.string.isRequired,
+  };
+  return <div className="display">{result}</div>;
+}
 
 function Calculator() {
+  const [obj, setobj] = useState({
+    total: null,
+    next: null,
+    operation: null,
+  });
+
+  const handleButton = (e) => {
+    setobj((calculate(obj, e.target.innerText)));
+  };
   const buttons = [
-    { value: '0', className: 'display' },
     { value: 'AC', className: 'grey' },
     { value: '+/-', className: 'grey' },
     { value: '%', className: 'grey' },
@@ -27,11 +45,14 @@ function Calculator() {
   return (
 
     <div className="container">
+      <Display result={obj.next || obj.total || '0'} />
+
       {buttons.map((btn) => (
         <Buttons
           value={btn.value}
           className={btn.className}
-          key={btn.value}
+          key={buttons.indexOf(btn)}
+          handleButton={handleButton}
         />
       ))}
     </div>
