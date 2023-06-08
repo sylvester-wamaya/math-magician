@@ -1,8 +1,8 @@
-import React, { useEffect/* useState */ } from 'react';
+import React, { useEffect, useState } from 'react';
 
 function Quote() {
-//   const [quote, setQuote] = useState([]);
-  // const [isLoading, setIsLoading] = useState(false)
+  const [quote, setQuote] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
   // const [hasError, setHasError] = useState(false)
 
   const apiKey = 'rruW2yeTLFMLFy5iDM0R8w==YVB0xOk1qJHHR1fZ';
@@ -11,7 +11,7 @@ function Quote() {
   useEffect(() => {
     const fetchQuote = async () => {
       try {
-        // setIsLoading(true);
+        setIsLoading(true);
         const res = await fetch(api,
           {
             method: 'GET',
@@ -22,18 +22,22 @@ function Quote() {
             },
           });
         const quoteData = await res.json();
-        console.log(quoteData);
-        // setIsLoading(false)
+        setQuote(quoteData);
+        setIsLoading(false);
       } catch (err) {
         console.log(err);
         // setHasError(true)
       }
     };
     fetchQuote();
-  }, []);
+  }, [setQuote]);
+
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
 
   return (
-    <div />
+    <div>{quote.map((item) => item.quote)}</div>
   );
 }
 
