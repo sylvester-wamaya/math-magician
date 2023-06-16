@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 function HomePage() {
   return (
     <div>
-     <h3>
+      <h3>
         Welcome to our page!
       </h3>
       <p className="Para">
@@ -23,7 +23,7 @@ function HomePage() {
         repudiandae voluptatum praesentium? Quas, tenetur ut. Ipsum quam rerum iure.
       </p>
     </div>
-  )
+  );
 }
 
-export default HomePage
+export default HomePage;
