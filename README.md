@@ -71,6 +71,8 @@ Math magician application is a project that allows a user to do basic mathematic
 - Added linters set up.
 - Added Calculator UI.
 - Added Calculator functionalities.
+- Added Home page.
+- Added Navigation bar.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -155,8 +157,8 @@ npm start
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] Add Home page
-- [ ] Add quote page
+- [ ] Add more styling
+- [ ] Add personalized content
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
