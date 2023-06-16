@@ -2,10 +2,10 @@ import React from 'react';
 
 function HomePage() {
   return (
-    <div>
-      <h3>
+    <div className="home">
+      <h2>
         Welcome to our page!
-      </h3>
+      </h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         Odit aspernatur vero cumque laudantium unde quibusdam,

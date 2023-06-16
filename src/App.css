@@ -63,3 +63,9 @@ h1{
   font-size:3rem;
   color: rgb(146, 106, 6);
 }
+.home h2{
+  margin: 2rem 0;
+}
+p{
+  margin-bottom: 1rem;
+}
