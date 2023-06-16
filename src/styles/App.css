@@ -3,7 +3,8 @@
   margin: 0;
   box-sizing: border-box;
 }
-body{
+
+body {
   padding: 0.5rem 3rem;
 }
 
@@ -41,33 +42,37 @@ body{
   border: solid 1px black;
   background-color: aqua;
 }
-nav{
+
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.nav-item{
+
+.nav-item {
   margin-left: 0.5rem;
   color: rgb(3, 113, 113);
   font-weight: 600;
   font-size: 1.25rem;
 }
-h1{
-  font-size:3rem;
+
+h1 {
+  font-size: 3rem;
   color: rgb(146, 106, 6);
 }
-.home h2{
+
+.home h2 {
   margin: 2rem 0;
 }
-p{
+
+p {
   font-size: 1.25rem;
   margin-bottom: 1rem;
   padding: 0.7rem 0.25rem;
 }
 
-.quote{
+.quote {
   margin: 10% auto;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
   display: inline-block;
-  
 }
