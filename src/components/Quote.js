@@ -30,7 +30,7 @@ function Quote() {
   }
 
   return (
-    <div className="quote"><p>{quote.length > 0 ? quote.map((item) => item.quote) : 'Something went wrong'}</p></div>
+    <div style={{ textAlign: 'center' }}><p className="quote">{quote.length > 0 ? quote.map((item) => item.quote) : 'Something went wrong'}</p></div>
   );
 }
 
