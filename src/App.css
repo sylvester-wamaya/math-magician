@@ -65,10 +65,20 @@ h1{
   margin: 2rem 0;
 }
 p{
+  font-size: 1.25rem;
   margin-bottom: 1rem;
 }
 section{
   display: flex;
   justify-content: space-between;
   margin-top: 2rem;
+}
+.quote{
+  text-align: center;
+}
+.quote p{
+  margin: 10% auto;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: inline-block;
+  
 }
