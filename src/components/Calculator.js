@@ -44,19 +44,21 @@ function Calculator() {
   };
 
   return (
+    <section>
+      <h2>Let&lsquo;s do some maths!</h2>
+      <div className="container">
+        <Display result={obj.next || obj.total || '0'} />
 
-    <div className="container">
-      <Display result={obj.next || obj.total || '0'} />
-
-      {buttons.map((btn) => (
-        <Buttons
-          value={btn.value}
-          className={btn.className}
-          key={buttons.indexOf(btn)}
-          handleButton={handleButton}
-        />
-      ))}
-    </div>
+        {buttons.map((btn) => (
+          <Buttons
+            value={btn.value}
+            className={btn.className}
+            key={buttons.indexOf(btn)}
+            handleButton={handleButton}
+          />
+        ))}
+      </div>
+    </section>
   );
 }
 export default Calculator;
