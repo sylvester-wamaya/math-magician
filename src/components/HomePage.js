@@ -6,7 +6,7 @@ function HomePage() {
       <h3>
         Welcome to our page!
       </h3>
-      <p className="Para">
+      <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         Odit aspernatur vero cumque laudantium unde quibusdam,
         ipsa et animi quidem, voluptatum temporibus accusamus

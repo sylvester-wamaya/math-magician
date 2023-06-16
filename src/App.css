@@ -3,9 +3,8 @@
   margin: 0;
   box-sizing: border-box;
 }
-
-body {
-  text-align: center;
+body{
+  padding: 0.5rem 3rem;
 }
 
 .container {
@@ -48,4 +47,19 @@ body {
 .grey:active {
   border: solid 1px black;
   background-color: aqua;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-item{
+  margin-left: 0.5rem;
+  color: rgb(3, 113, 113);
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+h1{
+  font-size:3rem;
+  color: rgb(146, 106, 6);
 }
