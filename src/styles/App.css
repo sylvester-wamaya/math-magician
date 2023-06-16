@@ -7,11 +7,6 @@ body{
   padding: 0.5rem 3rem;
 }
 
-.container {
-  display: inline-grid;
-  grid-template-columns: repeat(4, auto);
-}
-
 .display {
   grid-column: 1/span 4;
   padding: 1rem 0.2rem;
@@ -68,11 +63,7 @@ p{
   font-size: 1.25rem;
   margin-bottom: 1rem;
 }
-section{
-  display: flex;
-  justify-content: space-between;
-  margin-top: 2rem;
-}
+
 .quote{
   text-align: center;
 }

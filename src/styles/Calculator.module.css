@@ -1,0 +1,11 @@
+
+section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+  .container {
+    display: inline-grid;
+    grid-template-columns: repeat(4, auto);
+  }
+ 
